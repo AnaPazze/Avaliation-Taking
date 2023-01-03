@@ -1,0 +1,15 @@
+CREATE TABLE tabela_endereco(
+endereco_id INT NOT NULL IDENTItY,
+Tipo Varchar(10) NOT NULL,
+Logradouro Varchar(250) NOT NULL,
+Numero Varchar(10) NOT NULL,
+Complemento Varchar(100),
+Cep Numeric NOT NULL,
+Cidade Varchar(250) NOT NULL,
+Estado Char(2) NOT NULL,
+pessoa_id INT,
+PRIMARY KEY(endereco_id),
+FOREIGN KEY(pessoa_id) REFERENCES tabela_pessoa(pessoa_id)
+);
+
+SELECT * FROM tabela_endereco

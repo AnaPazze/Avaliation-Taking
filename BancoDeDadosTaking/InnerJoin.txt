@@ -1,0 +1,16 @@
+SELECT tabela_pessoa.pessoa_id, 
+tabela_pessoa.Nome,
+tabela_pessoa.CPF,
+tabela_pessoa.Idade,
+tabela_pessoa.Sexo,
+tabela_endereco.Tipo,
+tabela_endereco.Logradouro,
+tabela_endereco.Numero,
+tabela_endereco.Complemento,
+tabela_endereco.Cep,
+tabela_endereco.Cidade,
+tabela_endereco.Estado
+FROM
+tabela_pessoa INNER JOIN tabela_endereco
+ON tabela_pessoa.pessoa_id = tabela_endereco.pessoa_id;
+

@@ -1,0 +1,10 @@
+CREATE TABLE tabela_pessoa(
+pessoa_id INT NOT NULL IDENTITY,
+Nome Varchar(200) NOT NULL,
+CPF Varchar(25) NOT NULL,
+Idade Date,
+Sexo Char(1),
+PRIMARY KEY(pessoa_id)
+);
+
+SELECT * FROM tabela_pessoa
